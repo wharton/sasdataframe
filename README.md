@@ -2,9 +2,10 @@
 
 # Usage #
 
-   from sasdataframe import sas_to_dataframe
 
-   df = sas_to_dataframe('/path/to/sas/directory', 'dataset name', '/path/to/file.csv')
+    from sasdataframe import sas_to_dataframe
+
+    df = sas_to_dataframe('/path/to/sas/directory', 'dataset name', '/path/to/file.csv')
 
 Optionally, if you have opinions about what types your columns ought to have, you can pass in a dictionary where each key is the column name and each value is the desired data type.
 
