@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sasdataframe
+Version: 0.0.1
+Summary: Import a SAS dataset into a Pandas dataframe
+Home-page: http://www.upenn.edu
+Author: Joe Dougherty
+Author-email: josepd@wharton.upenn.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
