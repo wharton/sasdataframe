@@ -1,6 +1,7 @@
 # SAS -> Pandas DataFrame #
 
 # Usage #
+
    from sasdataframe import sas_to_dataframe
 
    df = sas_to_dataframe('/path/to/sas/directory', 'dataset name', '/path/to/file.csv')
@@ -10,7 +11,7 @@ Optionally, if you have opinions about what types your columns ought to have, yo
     type_dict = {'SYMBOL': object, 'NAME': object, 'CUSIP': object, 
                  'first_available_date': object, 'last_available_date': object}
 
-    df = sas_to_dataframe('/path/to/sas/directory', 'dataset name', '/path/to/file.csv')
+    df = sas_to_dataframe('/path/to/sas/directory', 'dataset name', '/path/to/file.csv', type_dict=type_dict)
 
 # Dependencies #
 
