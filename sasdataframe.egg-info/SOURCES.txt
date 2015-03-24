@@ -1,5 +1,5 @@
 setup.py
-sasdataframe/sasdataframe.py
+sasdataframe/__init__.py
 sasdataframe.egg-info/PKG-INFO
 sasdataframe.egg-info/SOURCES.txt
 sasdataframe.egg-info/dependency_links.txt
