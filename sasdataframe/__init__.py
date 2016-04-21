@@ -42,10 +42,10 @@ def sas_to_dataframe(path_to_libname, dsname, abs_path_to_csv, type_dict={}):
     df = sas_to_dataframe('/path/to/sasdataset/directory', 'dataset_name', '/home/user/tempdataset.csv')
 
     """
-    return_obj = export_dsn_to_csv(path_to_libname, dsname, abs_path_to_csv, type_dict=type_dict)
+    return_obj = export_dsn_to_csv(path_to_libname, dsname, abs_path_to_csv)
 
     if return_obj.returncode not in (0,1):
-        msg = "Couldn't convert {} to csv.\nSAS invocation was {}.\nPlease see log for details.\n".format(dsname, return_obj)
+        msg = "Couldn't convert {0} to csv.\nSAS invocation was {1}.\nPlease see log for details.\n".format(dsname, return_obj)
         raise Exception(msg)
     else:
         return create_pd_dataframe(abs_path_to_csv)
