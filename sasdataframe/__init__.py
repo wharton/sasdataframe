@@ -22,13 +22,11 @@ def create_pd_dataframe(abs_path_to_csv, type_dict={}):
         return pd.read_csv(abs_path_to_csv)
 
 def sas_to_dataframe(path_to_libname, dsname, abs_path_to_csv, type_dict={}):
-    if type_dict: 
-        return_obj = export_dsn_to_csv(path_to_libname, dsname, abs_path_to_csv, type_dict=type_dict)
-    else:
-        return_obj = export_dsn_to_csv(path_to_libname, dsname, abs_path_to_csv)
+    return_obj = export_dsn_to_csv(path_to_libname, dsname, abs_path_to_csv, type_dict=type_dict)
 
-    if return_obj.returncode != 0:
-        raise Exception("Couldn't convert " + dsname + " to csv.")
+    if return_obj.returncode not in (0,1):
+        msg = "Couldn't convert {} to csv.\nSAS invocation was {}.\nPlease see log for details.\n".format(dsname, return_obj)
+        raise Exception(msg)
     else:
         return create_pd_dataframe(abs_path_to_csv)
 
