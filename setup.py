@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
         name="sasdataframe",
-        version='0.0.5',
+        version='0.0.6',
         description="Import a SAS dataset into a Pandas dataframe",
         author="Joe Dougherty",
         author_email="josepd@wharton.upenn.edu",
