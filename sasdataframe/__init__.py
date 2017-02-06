@@ -50,7 +50,7 @@ def sas_to_dataframe(path_to_libname, dsname, abs_path_to_csv=None, type_dict={}
     """
     
     if abs_path_to_csv is None:
-        abs_path_to_csv = os.path.join(os.path.cwd(), 'tmp_output.csv')
+        abs_path_to_csv = os.path.join(os.getcwd(), 'tmp_output.csv')
 
     return_obj = export_dsn_to_csv(path_to_libname, dsname, abs_path_to_csv)
 
