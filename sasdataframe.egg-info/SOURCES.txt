@@ -1,7 +1,0 @@
-setup.py
-sasdataframe/__init__.py
-sasdataframe.egg-info/PKG-INFO
-sasdataframe.egg-info/SOURCES.txt
-sasdataframe.egg-info/dependency_links.txt
-sasdataframe.egg-info/requires.txt
-sasdataframe.egg-info/top_level.txt
