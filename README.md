@@ -1,11 +1,15 @@
 # SAS -> Pandas DataFrame #
 
+# Installation #
+
+    pip install sasdataframe
+
 # Usage #
 
 
     from sasdataframe import sas_to_dataframe
 
-    df = sas_to_dataframe('/path/to/sas/directory', 'dataset name', '/path/to/file.csv')
+    df = sas_to_dataframe('/path/to/sas/directory', 'dataset_name', '/path/to/file.csv')
 
 This is just a wrapper around some SAS that exports the dataset in question to a csv. The /path/to/file.csv should be where you'd like the csv to live on the file system. This location will later be used to import the data into Pandas.
 
@@ -19,4 +23,3 @@ If you have opinions about what types your columns ought to have, you can pass i
 # Dependencies #
 
 You'll want a copy of `inlinesas` installed for this one. 
-
